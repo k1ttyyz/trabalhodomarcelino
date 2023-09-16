@@ -10,13 +10,20 @@ export const middleware = (request) => {
     const isTokenValidated = validateToken(token);
 
     if (!isTokenValidated || !token) {
-        if (request.nextUrl.pathname === '/pages/dashboard') {
+        if (request.nextUrl.pathname === '/pages/dashboard' || request.nextUrl.pathname === '/pages/alter' || request.nextUrl.pathname === '/pages/registraar' ) 
+        {
             return NextResponse.redirect(urlLogin);
         }
     }
+if (isTokenValidated) {
+    if(request.nextUrl.pathname === '/') {
+        return NextResponse.redirect(Users);
+    }
+}
+
     NextResponse.next();
 };
 export const config = {
-    matcher: ['/', '/pages/dashboard']
+    matcher: ['/', '/pages/dashboard', '/pages/alter', '/pages/registraar',] 
 };
 
