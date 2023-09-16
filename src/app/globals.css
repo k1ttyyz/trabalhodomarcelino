@@ -9,13 +9,16 @@
     align-items: center;
     width: 500px;
     height: 500px;
-    border-radius: 10px;
+    border-radius: 100px;
     margin-left: 100px;
     display: flex;
+    box-shadow: 5px 5px 5px black;
 }
 
 .a {
-    background-color: rgb(44, 0, 70);
+    background-image: url("https://static.vecteezy.com/system/resources/previews/024/605/901/original/cute-rabbit-with-his-bear-friend-playing-on-the-clouds-free-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     padding: 60px 100px 100px 300px;
     text-align: right;
     align-items: 100px;
@@ -29,6 +32,9 @@
     width: 100px;
     height: 30px;
     border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
     text-align: center;
     margin-right: 130px;
 
@@ -40,6 +46,9 @@
     height: 30px;
     margin-right: 130px;
     border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -49,6 +58,9 @@
     height: 30px;
     margin-right: 130px;
     border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -79,7 +91,7 @@
 }
 
 .b {
-    background: linear-gradient(#8400ff, #9198e5);
+    background: linear-gradient(#8400ff, #000000);
     width: 350px;
     height: 350px;
     margin-left: 80px;
@@ -89,9 +101,13 @@
 
 
 .dd {
+
+    border-radius: 10px;
     padding-right: 500px;
     color: white;
     padding-bottom: 20px;
+    font-family: cursive;
+    text-shadow: 5px 5px 5px  grey;
 }
 
 
