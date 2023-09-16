@@ -7,3 +7,5 @@ const validateToken = (token)=>{
     return token=false;
 }   
 export {validateToken};
+
+// aqui é aonde iremos validar o token ou seja , ele pega do handleracessapi se o token é valido , se não , ele não ira funcionar
