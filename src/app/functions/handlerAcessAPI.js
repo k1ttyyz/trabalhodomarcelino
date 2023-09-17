@@ -27,9 +27,9 @@ const Users = [{
 const getUserAuthenticated = (user) => {
     let userAuth = {};//variavel para definir usuarios autenticados
 
-Users.map((user)=>{
-    if (user.email === user.email & user.senha === user.password){
-        userAuth = user
+Users.map((gato)=>{
+    if (user.email === gato.email & gato.senha === user.password){
+        userAuth = gato
     }
 }) 
 // mapeamento para definir os requisitos dos usuarios a serem preenchidos para registrar o usuario

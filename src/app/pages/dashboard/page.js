@@ -1,10 +1,10 @@
 import { getUsers } from "@/app/functions/handlerAcessAPI";
 import { Suspense} from "react";
-import Listarsim from "@/app/componentes/Listarsim";
+import Listarsim from "@/componentes/Listarsim";
 export default async function Dashboard() {
    
 
-    const users = getUsers()
+    const gatito = getUsers()
     return (
         <div>
         <div className="jj">
@@ -12,13 +12,29 @@ export default async function Dashboard() {
             
            
             <div className="bg-gray-200 w-100 italic">
-            <Listarsim users ={users}/>
+            <Listarsim gatito ={gatito}/>
                 
             <button><a href="/pages/alter">Alterar</a></button>
             <button><a href="/pages/registraar">Registrar</a></button>
             </div>
            </Suspense>
            </div>
-        </div>
+
+           {gatito.map ((gatito => {
+               return(
+            <h1>
+<p>{gatito.nome}</p>
+<p>{gatito.email}</p>
+<p>{gatito.password}</p>
+
+            </h1>
+               )
+           }))}
+         
+                   </div>
+
+        
+
+        
     );
 };
