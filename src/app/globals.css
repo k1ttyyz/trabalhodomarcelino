@@ -135,3 +135,15 @@
 .elgato{
    background-color: brown;
 }
+
+.re{
+    background-image: url("https://wallpaperaccess.com/full/5537255.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 60px 100px 100px 300px;
+    text-align: right;
+    align-items: 100px;
+    width: 1350px;
+    height: 650px;
+    display: block; 
+}

@@ -1,6 +1,7 @@
 import { getUsers } from "@/app/functions/handlerAcessAPI";
 import { Suspense} from "react";
 import Listarsim from "@/componentes/Listarsim";
+import Voltar from '../../../componentes/voltar';
 export default async function Dashboard() {
    
 
@@ -13,14 +14,10 @@ export default async function Dashboard() {
            
             <div className="elgato">
             <Listarsim gatito ={gatito}/>
-                
-            <button><a href="/pages/alter">Alterar</a></button>
-            <button><a href="/pages/registraar">Registrar</a></button>
-            </div>
-           </Suspense>
+
            
 
-           {gatito.map ((gatito => {
+            {gatito.map ((gatito => {
                return(
             <h1>
 <p>{gatito.nome}</p>
@@ -30,6 +27,18 @@ export default async function Dashboard() {
             </h1>
                )
            }))}
+        
+        <button><a href="/pages/alter">Alterar</a></button>
+            <button><a href="/pages/registraar">Registrar</a></button>
+           <Voltar/>
+            
+            </div>
+           </Suspense>
+        
+
+
+
+
          </div>
                    </div>
 
