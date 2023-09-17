@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -6,7 +7,8 @@ const Formulariozinho = () => {
 
     const handlerLogin = async (e) => {
         e.preventDefault();
-        toast.success('Sucesso ao ser alterado, uhuu!!')
+        toast.success('Sucesso ao Registrar, uhuu!! ')
+        
     }
 
     return(
@@ -14,7 +16,7 @@ const Formulariozinho = () => {
 
     <div className="re">
     <form onSubmit={handlerLogin}>
-    <h2 className="dd">FORMULÁRIO DE ALTERAR</h2>
+    <h2 className="dd">FORMULÁRIO PARA REGISTRAR</h2>
       <div className="cont">
    
       <div className="eu">

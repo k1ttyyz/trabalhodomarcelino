@@ -147,3 +147,54 @@
     height: 650px;
     display: block; 
 }
+
+.cont{
+    background-image: url("https://i.pinimg.com/originals/d0/9e/72/d09e727e79278dec0ada45d17e034897.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 100px;
+    margin-left: 100px;
+    display: flex;
+    box-shadow: 5px 5px 5px black;
+}
+
+.eu{
+    background: linear-gradient(#8400ff, #000000);
+    width: 350px;
+    height: 350px;
+    margin-left: 80px;
+    border-radius: 100px;
+    opacity: 0.8;
+}
+.llo{
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.loogin{
+ 
+   
+}
+
+.bboo{
+    background-image: url("https://wallpapers.com/images/hd/baby-blue-chococat-5osbv29heqzc6l38.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1300px;
+    height: 600px;
+}
+
+.lnn{
+border-radius: 10px;
+background-color: #000000;
+}
+
+.linn{
+    border-radius: 10px;
+    background-color: #000000;
+}

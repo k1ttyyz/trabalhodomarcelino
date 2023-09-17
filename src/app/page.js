@@ -26,20 +26,25 @@ export default function Login() {
     }
   }
   return (
-    <body>
-    <div>
-      <h1>Login</h1>
+    <body className="bboo">
+    <div className="loogin">
+    
       <form onSubmit={handlerLogin}>
+      <h5 className="llo">PAGINA DE LOGIN <img src=""></img></h5>
+       
+       
         <input
           placeholder='E-mail'
-          type="email"
+          type="email" className="linn"
           onChange={(e) => { setUser({ ...user, email: e.target.value }) }}>
         </input>
+
         <input
           placeholder='Senha'
-          type='password'
+          type='password' className="lnn"
           onChange={(e) => { setUser({ ...user, password: e.target.value }) }}>
         </input>
+
         <button>Entrar</button>
       </form>
       <ToastContainer/>
