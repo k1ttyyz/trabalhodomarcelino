@@ -40,12 +40,18 @@ export default function Login() {
         </input>
 
         <input
+          placeholder='Nome'
+          type='name' className="lnn"
+          onChange={(e) => { setUser({ ...user, name: e.target.value }) }}>
+        </input>
+
+        <input
           placeholder='Senha'
           type='password' className="lnn"
           onChange={(e) => { setUser({ ...user, password: e.target.value }) }}>
         </input>
 
-        <button>Entrar</button>
+        <button className="bbl">Entrar</button>
       </form>
       <ToastContainer/>
     </div>

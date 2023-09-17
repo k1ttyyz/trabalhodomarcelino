@@ -9,6 +9,8 @@ export default function Voltar(){
         push('/')
     }
     return(
-        <div> <button onClick={sair}>sair</button> </div>
+        <div> <button onClick={sair} className="hoje">sair</button> </div>
     )
 }
+
+//componente que importei no dashboard para aparecer o botão de sair para pagina de login

@@ -47,3 +47,5 @@ const Formulariozinho = () => {
     )
 };
 export default Formulariozinho;
+
+//pagina simples com formulário ao qual ira registrar novos usuarios
