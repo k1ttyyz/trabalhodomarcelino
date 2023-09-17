@@ -8,7 +8,7 @@ export default async function Dashboard() {
     return (
         <div>
         <div className="jj">
-           <Suspense fallback={<p><img src="https://i.pinimg.com/originals/98/81/5f/98815f30af15d94ab3dd1af44ef8e6a9.gif" className="hhl"></img><p className="hh">Carregando a pagina!!</p></p>}>
+           <Suspense fallback={<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Cat_Laptop_-_Idil_Keysan_-_Wikimedia_Giphy_stickers_2019.gif/1024px-Cat_Laptop_-_Idil_Keysan_-_Wikimedia_Giphy_stickers_2019.gif" className="hhl"></img><p className="hh">Carregando a pagina... aguarde o gatinho programador, terminar de programar!</p></p>}>
             
            
             <div className="bg-gray-200 w-100 italic">

@@ -24,11 +24,11 @@ const Users = [{
 //aqui serão os usuarios que seram registrados ou cadastrados no nosso formulário
 ];
 
-const getUserAuthenticated = async (userLogin) => {
-    let userAuth = {};//variavel para definir usuarios autenticados ou a serem registrados
+const getUserAuthenticated = (user) => {
+    let userAuth = {};//variavel para definir usuarios autenticados
 
 Users.map((user)=>{
-    if (user.email === userLogin.email & user.senha === userLogin.password){
+    if (user.email === user.email & user.senha === user.password){
         userAuth = user
     }
 }) 
