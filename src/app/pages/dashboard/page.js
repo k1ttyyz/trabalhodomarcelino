@@ -34,8 +34,8 @@ export default async function Dashboard() {
            }))}
             <div className="bota">
          <Listarsim gatito ={gatito}/>
-        <button className="bota1"><a href="/pages/alter">Alterar</a></button>
-            <button className="bota2"><a href="/pages/registraar">Registrar</a></button>
+        <button className="bota1"><a href="/pages/dashboard/alter">Alterar</a></button>
+            <button className="bota2"><a href="/pages/dashboard/registraar">Registrar</a></button>
            <Voltar/>
            </div>
            </div>
