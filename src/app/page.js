@@ -58,3 +58,6 @@ export default function Login() {
     </body>
   );
 }
+
+//aqui sera definido a pagina de login ao qual tera o componente toast que é pra poder ter a forma de "props" entre as páginas como o navigation que permite que va de uma pagina a outra
+// na função do login ira definir que vai começar com espaço em branco assim para preencher o usuario com os requerimentos que pedem no handleracessapi que assim puxando com a rota user ira identificar se esta correto para poder ir a outra pagina
