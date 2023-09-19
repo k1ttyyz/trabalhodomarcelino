@@ -3,6 +3,7 @@ export default async function Listarsim ({users}){
     return(
         <div> {users?.map((user, index) => 
             <p key={index}>{user.nome}</p>
+           
     )}
             </div>
     )

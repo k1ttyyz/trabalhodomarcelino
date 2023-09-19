@@ -1,6 +1,6 @@
 import '../app/globals.css'
 export const metadata = {
-  title: 'Register users',
+  title: 'PAGINA DO PABLO',
   description: 'Project for class PTAC',
 }
 
