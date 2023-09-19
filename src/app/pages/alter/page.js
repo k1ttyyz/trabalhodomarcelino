@@ -22,11 +22,11 @@ const Formulariozinho = () => {
       
      
        <br/>
-       <input placeholder="email" type="E-mail" className="innna"></input><br/>
+       <input placeholder="email" type="E-mail" className="innna" required></input><br/>
        <br/>
-       <input placeholder="name" type="nome" className="innne"></input><br/>
+       <input placeholder="name" type="nome" className="innne" required></input><br/>
        <br/>
-       <input placeholder="password" type="senha" className="inne"></input>
+       <input placeholder="password" type="senha" className="inne" required></input>
        <br/>
        <div  className="buu">
        <button>Entrar</button>

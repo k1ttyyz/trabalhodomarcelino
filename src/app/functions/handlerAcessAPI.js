@@ -28,7 +28,7 @@ const getUserAuthenticated = (user) => {
     let userAuth = {};//variavel para definir usuarios autenticados
 
 Users.map((gato)=>{
-    if (user.email === gato.email & gato.senha === user.password){
+    if (user.email === gato.email & gato.senha === user.password & user.name === gato.nome){
         userAuth = gato
     }
 }) 
