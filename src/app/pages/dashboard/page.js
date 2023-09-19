@@ -2,6 +2,7 @@ import { getUsers } from "@/app/functions/handlerAcessAPI";
 import { Suspense} from "react";
 import Listarsim from "@/componentes/Listarsim";
 import Voltar from '../../../componentes/voltar';
+
 export default async function Dashboard() {
    
 
