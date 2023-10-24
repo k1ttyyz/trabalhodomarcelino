@@ -39,11 +39,7 @@ export default function Login() {
           onChange={(e) => { setUser({ ...user, email: e.target.value }) }}>
         </input>
 
-        <input
-          placeholder='Nome'
-          type='name' className="lnn"
-          onChange={(e) => { setUser({ ...user, name: e.target.value }) }}>
-        </input>
+        
 
         <input
           placeholder='Senha'

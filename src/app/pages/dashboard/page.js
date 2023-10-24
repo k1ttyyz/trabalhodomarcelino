@@ -6,7 +6,7 @@ import Voltar from '../../../componentes/voltar';
 export default async function Dashboard() {
    
 
-    const gatito = getUsers()
+    const gatito = await getUsers()
     return (
         <div>
         <div className="jj">
