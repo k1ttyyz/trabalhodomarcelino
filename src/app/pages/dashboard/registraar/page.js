@@ -3,13 +3,22 @@ import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 const Formulariozinho = () => {
-
-    const handlerLogin = async (e) => {
-        e.preventDefault();
-        toast.success('Sucesso ao Registrar, uhuu!! ')
-        
-    }
-
+        const [user, setUser] = useState({
+          name:'',
+          email: '',
+          password: '',
+        });
+        const { push} = useRouter();
+      
+        const handlerFormSubmit = async (event) => {
+          event.preventDefault();
+          try {
+            await postUser(user);
+            return push("/pages/dashboard");
+          } catch {
+           return toast.error("Erro")
+          }
+        };  
     return(
       
 

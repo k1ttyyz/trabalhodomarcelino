@@ -15,6 +15,28 @@ const userAuth = await responseOffApi.json();
 console.log(userAuth)
 return userAuth;
 }
+
+
+const postUser = async (user) => {
+
+    const responseOffApi = await fetch(url + "/user",
+     {
+         method: "POST",
+         cache:"no-cache",
+         headers: {"Content-Type" : "application/json"}, 
+         body: JSON.stringify(user)
+     }
+     )
+ const userSavee = await responseOffApi.json();
+ console.log(userAuth)
+ return userSavee;
+ }
+
+
+
+
+
+
 const getUsers = async (user) => {
 
     const responseOfApi = await fetch(url + "/users", {cache:"no-cache"})
@@ -23,4 +45,4 @@ const getUsers = async (user) => {
 
 }
 
-export { getUsers, getUserAuthenticated};
+export { getUsers, getUserAuthenticated, postUser};
