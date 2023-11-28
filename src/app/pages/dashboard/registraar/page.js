@@ -1,8 +1,9 @@
 'use client'
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { postUser } from "@/app/functions/handlerAcessAPI";
 
-const Formulariozinho = () => {
+export default function Register(){
         const [user, setUser] = useState({
           name:'',
           email: '',
@@ -54,6 +55,6 @@ const Formulariozinho = () => {
 
     )
 };
-export default Formulariozinho;
+
 
 //pagina simples com formulário ao qual ira registrar novos usuarios

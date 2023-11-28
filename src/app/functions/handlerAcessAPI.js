@@ -3,7 +3,7 @@ const url ="https://aula-17-10-main-gilt.vercel.app";
 
 const getUserAuthenticated = async (user) => {
 
-   const responseOffApi = await fetch(url + "/user/authenticated",
+   const responseOfApi = await fetch(url + "/user/authenticated",
     {
         method: "POST",
         cache:"no-cache",
@@ -18,24 +18,20 @@ return userAuth;
 
 
 const postUser = async (user) => {
-
-    const responseOffApi = await fetch(url + "/user",
-     {
+try{
+    const responseOfApi = await fetch(url + "/user",{
+     
          method: "POST",
          cache:"no-cache",
-         headers: {"Content-Type" : "application/json"}, 
+         headers: {"Content-Type" : "Application/json"}, 
          body: JSON.stringify(user)
-     }
-     )
- const userSavee = await responseOffApi.json();
- console.log(userAuth)
+     });
+ const userSavee = await responseOfApi.json();
  return userSavee;
+ }catch{
+    return null;
  }
-
-
-
-
-
+}
 
 const getUsers = async (user) => {
 
