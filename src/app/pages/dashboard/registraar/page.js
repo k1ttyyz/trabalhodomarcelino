@@ -2,6 +2,9 @@
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { postUser } from "@/app/functions/handlerAcessAPI";
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+
 
 export default function Register(){
         const [user, setUser] = useState({
@@ -24,7 +27,7 @@ export default function Register(){
       
 
     <div className="re">
-    <form onSubmit={handlerLogin}>
+    <form onSubmit={handlerFormSubmit}>
     <h2 className="dd">FORMULÁRIO PARA REGISTRAR</h2>
       <div className="cont">
    
@@ -32,11 +35,11 @@ export default function Register(){
       
      
        <br/>
-       <input placeholder="email" type="E-mail" className="innna" required></input><br/>
+       <input placeholder="email" type="E-mail" className="innna"  onChange={(e) => {setUser({...user, name: e.target.value})}}  required></input><br/>
        <br/>
-       <input placeholder="name" type="nome" className="innne" required></input><br/>
+       <input placeholder="name" type="nome" className="innne"  onChange={(e) => {setUser({...user, name: e.target.value})}}  required></input><br/>
        <br/>
-       <input placeholder="password" type="senha" className="inne" required></input>
+       <input placeholder="password" type="senha" className="inne"  onChange={(e) => {setUser({...user, name: e.target.value})}}  required></input>
        <br/>
        <div  className="buu">
        <button>Entrar</button>
