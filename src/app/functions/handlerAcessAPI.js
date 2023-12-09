@@ -28,7 +28,6 @@ try{
      }
      )
  const userSavee = await responseOffApi.json();
- console.log(userAuth)
  return userSavee;
  } catch {
     return null
