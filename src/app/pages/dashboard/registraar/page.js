@@ -14,10 +14,14 @@ export default function Register(){
         });
         const { push} = useRouter();
       
-        const handlerFormSubmit = async (event) => {
-          event.preventDefault();
+        const handlerFormSubmit = async (e) => {
+          e.preventDefault();
           try {
             await postUser(user);
+            await new Promise((resolve) => {
+              toast.success("Usuário registrado com sucesso");
+              setTimeout(resolve, 3000)
+            })
             return push("/pages/dashboard");
           } catch {
            return toast.error("Erro")
@@ -35,11 +39,11 @@ export default function Register(){
       
      
        <br/>
-       <input placeholder="email" type="E-mail" className="innna"  onChange={(e) => {setUser({...user, name: e.target.value})}}  required></input><br/>
+       <input placeholder="email" type="email" className="innna"  onChange={(e) => {setUser({...user, email: e.target.value})}}  required></input><br/>
        <br/>
-       <input placeholder="name" type="nome" className="innne"  onChange={(e) => {setUser({...user, name: e.target.value})}}  required></input><br/>
+       <input placeholder="name" type="name" className="innne"  onChange={(e) => {setUser({...user, name: e.target.value})}}  required></input><br/>
        <br/>
-       <input placeholder="password" type="senha" className="inne"  onChange={(e) => {setUser({...user, name: e.target.value})}}  required></input>
+       <input placeholder="password" type="password" className="inne"  onChange={(e) => {setUser({...user, password: e.target.value})}}  required></input>
        <br/>
        <div  className="buu">
        <button>Entrar</button>

@@ -11,12 +11,6 @@ export default function Login() {
     password: '',
   });
   const { push} = useRouter();
-  useEffect(()=>{
-    const acharUser = async () =>{
-return acharUser;
-    }
-  })
-
   const handlerLogin = async (e) => {
     e.preventDefault();
     try {

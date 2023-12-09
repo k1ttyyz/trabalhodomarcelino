@@ -2,7 +2,7 @@
 const url ="https://aula-17-10-main-kwjg.vercel.app";
 
 const getUserAuthenticated = async (user) => {
-
+try{
    const responseOffApi = await fetch(url + "/user/authenticated",
     {
         method: "POST",
@@ -10,13 +10,15 @@ const getUserAuthenticated = async (user) => {
         body: JSON.stringify(user)
     }
     )
-const Listade = await responseOffApi.json();
-return Listade;
+const userAuth = await responseOffApi.json();
+return userAuth;
+}catch{
+    return null
+}
 }
 
-
 const postUser = async (user) => {
-
+try{
     const responseOffApi = await fetch(url + "/user",
      {
          method: "POST",
@@ -28,8 +30,10 @@ const postUser = async (user) => {
  const userSavee = await responseOffApi.json();
  console.log(userAuth)
  return userSavee;
+ } catch {
+    return null
  }
-
+}
 
 
 
