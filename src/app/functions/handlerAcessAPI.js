@@ -36,7 +36,23 @@ try{
 
 
 
-
+const getUser = async (id) =>{
+    try{
+      const responseOfApi = await fetch(`${url}´/user/${id}`, {
+       method: "GET",
+       cache: "no-cache",
+       headers: {
+           "Content-Type": "application/json"
+          },
+       
+  });
+   const listaadoro = await responseOfApi.json();
+   return listaadoro;
+    } catch {
+      return null
+    }
+   
+  }
 
 const getUsers = async (user) => {
 
@@ -64,4 +80,4 @@ return null
    
 }
 
-export { getUsers, getUserAuthenticated, postUser, updateUser};
+export { getUsers, getUserAuthenticated, postUser, updateUser, getUser};
