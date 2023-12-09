@@ -41,12 +41,11 @@ export default function Alterar( {params} ){
       <div className="b">
       
      
+      <input placeholder="email" type="email" className="innna"  onChange={(e) => {setUser({...user, email: e.target.value})}}  required></input><br/>
        <br/>
-       <input placeholder="email" type="E-mail" className="innna" required></input><br/>
+       <input placeholder="name" type="name" className="innne"  onChange={(e) => {setUser({...user, name: e.target.value})}}  required></input><br/>
        <br/>
-       <input placeholder="name" type="nome" className="innne" required></input><br/>
-       <br/>
-       <input placeholder="password" type="senha" className="inne" required></input>
+       <input placeholder="password" type="password" className="inne"  onChange={(e) => {setUser({...user, password: e.target.value})}}  required></input>
        <br/>
        <div  className="buu">
        <button>Entrar</button>
