@@ -2,6 +2,7 @@ import { getUsers } from "@/app/functions/handlerAcessAPI";
 import { Suspense} from "react";
 import Listarsim from "@/componentes/Listarsim";
 import Voltar from '../../../componentes/voltar';
+import Link from "next/link";
 
 export default async function Dashboard() {
    
@@ -21,6 +22,7 @@ export default async function Dashboard() {
 <div className="meudeus">
 <h1 className="usu"> USUÀRIOS CADASTRADOS</h1>
             {gatito.map ((gatito => {
+                
                return(
                 
             <h1 className="omg">
@@ -28,14 +30,15 @@ export default async function Dashboard() {
 <p>{gatito.nome}</p>
 <p>{gatito.email}</p>
 <p>{gatito.password}</p>
-
+<Link href={`dashboard/alter/${gatito.id}`} className="alto">Alterar</Link><br></br>
             </h1>
                )
            }))}
             <div className="bota">
          <Listarsim gatito ={gatito}/>
-        <button className="bota1"><a href="/pages/dashboard/alter">Alterar</a></button>
+        <button className="bota1"><a href="/">Alterar</a></button>
             <button className="bota2"><a href="/pages/dashboard/registraar">Registrar</a></button>
+           
            <Voltar/>
            </div>
            </div>
